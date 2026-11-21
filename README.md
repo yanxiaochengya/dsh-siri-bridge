@@ -8,7 +8,21 @@
 
 ## 一、安装
 
-### 方式 A：直接拿文件夹（最简单）
+### 方式 A：npm（最省事）
+
+已经发到 npm 公共源了：
+
+```bash
+dsh plugin add dsh-siri-bridge
+```
+
+或者在 DSH 侧边栏的**插件页**里，输入框里填 `dsh-siri-bridge` 回车。
+
+装完重启 DSH，进「设置 → 插件 → Siri 语音桥」。
+
+版本：https://www.npmjs.com/package/dsh-siri-bridge
+
+### 方式 B：直接拿文件夹（离线备用）
 
 1. 把整个 `dsh-siri-bridge` 文件夹放进下面任意一处：
    - `~/.dsh/plugins/dsh-siri-bridge`（推荐，跟着 DSH 走）
@@ -38,22 +52,14 @@
 
 ### 方式 C：把 zip 给别人
 
-对方拿到的是压缩包，解压后最省事的就是按方式 A 走：
+对方拿到的是压缩包，解压后最省事的就是按方式 B 走：
 
 1. 解压，把里面的 `dsh-siri-bridge` 文件夹整个挪到 `%USERPROFILE%\.dsh\plugins\dsh-siri-bridge`
-2. 按方式 A 改 `package.json`（`link:` 指向那个新位置，`bundles` 里加一条）
-3. 按方式 A 的提示建好 junction
+2. 按方式 B 改 `package.json`（`link:` 指向那个新位置，`bundles` 里加一条）
+3. 按方式 B 的提示建好 junction
 4. 重启 DSH，进设置页
 
 **别直接把自己的整个 `~/.dsh` 发出去**，里面的会话、口令、配置都在；这个包只含插件代码，是干净的。
-
-### 方式 B：npm 包
-
-```bash
-dsh plugin add dsh-siri-bridge
-```
-
-（前提是它已经发到 npm；本地测试用方式 A 更快。）
 
 ---
 
