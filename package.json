@@ -4,6 +4,14 @@
   "description": "Siri 语音桥插件：把 iPhone 快捷指令 / Siri 接进 DSH。说一句话进来，取回回复。带设置页：开关、选会话（可自己起名）、自动查找地址、局域网/Tailscale 走线、端口、日志。",
   "license": "MIT",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanxiaochengya/dsh-siri-bridge.git"
+  },
+  "homepage": "https://github.com/yanxiaochengya/dsh-siri-bridge#readme",
+  "bugs": {
+    "url": "https://github.com/yanxiaochengya/dsh-siri-bridge/issues"
+  },
   "main": "lib/host.js",
   "exports": {
     ".": "./lib/host.js",
