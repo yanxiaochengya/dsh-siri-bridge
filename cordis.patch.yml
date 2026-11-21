@@ -1,0 +1,4 @@
+# DSH 插件：Siri 语音桥（把 iPhone 快捷指令接进来）
+- insert:
+    - id: siri-bridge
+      name: 'dsh-siri-bridge'
